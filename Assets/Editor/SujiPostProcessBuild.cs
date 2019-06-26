@@ -37,8 +37,8 @@ public class SujiPostProcessBuild : ScriptableObject {
                 switch (cap)
                 {
                     case SujiPostProcessSetup.CapabilityTypes.GameCenter:
-                        PlistElementArray blabla = root.values["UIRequiredDeviceCapabilities"].AsArray();
-                        blabla.AddString("gamekit");
+                        PlistElementArray deviceCapabilitiesArray = root.values["UIRequiredDeviceCapabilities"].AsArray();
+                        deviceCapabilitiesArray.AddString("gamekit");
                         break;
                     case SujiPostProcessSetup.CapabilityTypes.InAppPurchase:
                         break;

@@ -3,7 +3,7 @@ using UnityEditor.iOS.Xcode;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName ="setup", menuName ="Suji/Create/Post Process Setup")]
+[CreateAssetMenu(fileName ="setup", menuName ="Post Process/Setup")]
 public class SujiPostProcessSetup : ScriptableObject {
 
     public enum CapabilityTypes
